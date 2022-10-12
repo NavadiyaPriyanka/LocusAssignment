@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="138" id="KGk-i7-Jjw" customClass="SingleChoiseTableViewCell" customModule="Locus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="445" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="445" height="138"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBL-df-k2n">
+                        <rect key="frame" x="10" y="10" width="425" height="108"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="do4-Vx-PlL">
+                        <rect key="frame" x="20" y="128" width="415" height="0.0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="scf-g0-E3h"/>
+                        </constraints>
+                    </tableView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="do4-Vx-PlL" firstAttribute="top" secondItem="dBL-df-k2n" secondAttribute="bottom" constant="10" id="1J2-Pb-Jcu"/>
+                    <constraint firstAttribute="trailing" secondItem="do4-Vx-PlL" secondAttribute="trailing" constant="10" id="4Wg-XN-kKZ"/>
+                    <constraint firstAttribute="bottom" secondItem="do4-Vx-PlL" secondAttribute="bottom" constant="10" id="QZh-Fg-CtG"/>
+                    <constraint firstAttribute="trailing" secondItem="dBL-df-k2n" secondAttribute="trailing" constant="10" id="cqE-nQ-9mp"/>
+                    <constraint firstItem="do4-Vx-PlL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="fVk-dD-gHZ"/>
+                    <constraint firstItem="dBL-df-k2n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="gZg-TI-lII"/>
+                    <constraint firstItem="dBL-df-k2n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="sUF-jc-vHM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="heightOfOptionListViewConstraint" destination="scf-g0-E3h" id="UhB-m1-VeX"/>
+                <outlet property="optionTableView" destination="do4-Vx-PlL" id="O51-f7-fBU"/>
+                <outlet property="titleLabel" destination="dBL-df-k2n" id="bXV-iH-9ZG"/>
+            </connections>
+            <point key="canvasLocation" x="228.2608695652174" y="125.89285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
